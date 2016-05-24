@@ -9,6 +9,10 @@
         "sourceType": "script"
     },
     "rules": {
+        "globals": {
+            "$": true,
+            "jQuery": true
+        },
         "indent": [
             "error",
             4
