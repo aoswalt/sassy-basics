@@ -1,9 +1,8 @@
-/* jshint esversion:6, globalstrict:true */
-/* globals require */
 "use strict";
 
 const gulp = require("gulp");
 const sass = require("gulp-sass");
+const jshint = require("gulp-jshint");
 
 
 gulp.task("default", ["sass"]);
@@ -17,4 +16,11 @@ gulp.task("sass:compile", () => (
 ));
 gulp.task("sass:watch", () =>
   gulp.watch("./static/**/*.scss", ["sass"]
+));
+
+
+gulp.task("lint:js", () => (
+  gulp.src("./static/**/*.js")
+    .pipe(jshint())
+    .pipe(jshint.reporter("jshint-stylish"))
 ));

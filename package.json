@@ -18,7 +18,11 @@
   "homepage": "https://github.com/aoswalt/sassy-basics#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
     "gulp-sass": "^2.3.1",
+    "gulp-sass-lint": "^1.1.1",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
     "node-sass": "^3.7.0"
   }
 }
